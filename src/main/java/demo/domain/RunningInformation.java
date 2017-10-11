@@ -11,7 +11,7 @@ import java.util.Random;
 @Entity
 @Table(name = "RUNNING_ANALYSIS")
 //@JsonInclude(JsonInclude.Include.NON_NULL)
-@JsonIgnoreProperties({"latitude","longitude","runningDistance"})
+@JsonIgnoreProperties({"latitude","longitude","runningDistance","timestamp"})
 public class RunningInformation {
     enum HealthWarningLevel {
         HIGH, NORMAL, LOW;
